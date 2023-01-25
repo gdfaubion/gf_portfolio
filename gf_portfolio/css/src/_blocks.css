@@ -1,0 +1,341 @@
+.hero-container {
+  position: relative;
+  isolation: isolate;
+  background-color: $dark-blue;
+  color: $white;
+  padding: 80px 0;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0; 
+  }
+  h1 {
+    position: relative;
+    color: $white;
+    margin-bottom: 15px;
+    span {
+      display: block;
+      font-size: 28px;
+    }
+  }
+  p {
+    color: $light-gray;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .contain {
+    max-width: $contain-small;
+    position: relative;
+    padding: 0 15px;
+    z-index: 2;
+  }
+  .grid {
+    display: grid;
+    gap: 50px;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+    }
+  }
+  .grid-item:nth-child(2) {
+    padding-right: 15px;
+    @media screen and (min-width: 768px) {
+      justify-self: end;
+    }
+    @media screen and (min-width: 1180px) {
+      padding-right: 0px;
+    }
+  }
+}
+
+.headshot {
+  position: relative;
+  height: 310px;
+  width: 310px;
+  &:after {
+    display: block;
+    content:"";
+    height: 100%;
+    width: 100%;
+    border: 3px solid $dark-red;
+    border-radius: 7px;
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    right: -40px;
+    z-index: -1;
+    @media screen and (min-width: 1180px) {
+      top: -20px;
+      left: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1180px) {
+    height: 400px;
+    width: 400px;
+  }
+
+  img {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    margin: 0 auto;
+  }
+}
+
+.fw-pagebuilder {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &:after {
+    content: "";
+    height: 4000px;
+    width: 685px;
+    background-color: rgba(196, 30, 61, 0.1);
+    position: absolute;
+    top: -50%;
+    left: 210px;
+    transform: rotate(-40deg);
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+      /* left: 945px; */
+      left: 1105px;
+    }
+  }
+}
+
+.dark-bg.content-editor {
+  background-color: $dark-blue;
+  padding: 60px 0;
+  color: $white;
+  .contain {
+    max-width: $contain-small;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    list-style: none;
+  }
+  li {
+    position: relative;
+    font-family: $secondary-font;
+    letter-spacing: 1px;
+  }
+  li:before {
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-image: url('/wp-content/themes/gf_portfolio/images/dist/icons/chevron_white.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+  }
+}
+
+.alternating-content {
+  display: grid;
+  gap: 80px;
+  padding: 0 15px;
+  margin-top: 60px;
+  .contain {
+    max-width: $contain-small;
+  }
+  .border {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    &:after {
+      display: block;
+      content:"";
+      height: 100%;
+      width: 100%;
+      border: 3px solid $dark-red;
+      border-radius: 7px;
+      margin: 0 auto;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      right: -20px;
+      z-index: -1;
+      @media screen and (min-width: 1180px) {
+        right: -40px;
+      }
+    }
+  }
+  .image-left {
+    padding-left: 15px;
+    @media screen and (min-width: 1180px) {
+      padding-left: 0px;
+    }
+  }
+  .image-right {
+    padding-right: 15px;
+    @media screen and (min-width: 1180px) {
+      padding-right: 0px;
+    }
+  }
+  .image-left .border:after {
+    left: -20px;
+    right: 0;
+    @media screen and (min-width: 1180px) {
+      left: -40px;
+    }
+  }
+  img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 7px;
+  }
+}
+
+.alternating-content .grid {
+  display: grid;
+  gap: 25px;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid.image-left .content {
+    padding-left: 42px;
+  }
+
+  .grid.image-right .content {
+    padding-right: 42px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .grid.image-right .grid-item.image {
+    order: 1;
+  }
+
+  .grid.image-right .grid-item.content {
+    order: 2;
+  }
+}
+
+.content-editor {
+  padding: 0 15px;
+}
+
+.column-content {
+  padding: 0 15px;
+}
+
+.column-content .grid {
+  display: grid;
+  gap: 40px;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
+.overview-cards {
+  padding: 0 15px;
+}
+
+.overview-cards .grid {
+  display: grid;
+  gap: 50px;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 40px;
+  }
+  .overview-img {
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+#portfolio {
+  padding: 0 15px;
+}
+
+#portfolio h2 {
+  margin-bottom: 50px;
+}
+
+#portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-item {
+    position: relative;
+    .website-url {
+      text-align: center;
+      background-color: $dark-blue;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      padding: 10px 20px;
+    }
+    a {
+      display: inline-block;
+      text-align: center;
+      font-family: $secondary-font;
+      color: $white;
+      text-decoration: none;
+      transition: all .3s ease;
+      &:after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 1px;
+        position: relative;
+        bottom: 2px;
+        background-color: $white;
+        transition: all 0.3s ease;
+      }
+    }
+    a:hover:after {
+      width: 100%;
+    }
+    a.external-link .external {
+      fill: $white;
+    }
+  }
+  .screenshot {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    @media screen and (min-width: 1180px) {
+      height: 300px;
+    }
+    img {
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+  }
+}

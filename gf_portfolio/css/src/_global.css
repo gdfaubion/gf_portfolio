@@ -1,0 +1,48 @@
+/* -------------------------------------------------------------------------- */
+/* Global Vars
+-------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "fjalla";
+  src: url("/wp-content/themes/gf_portfolio/fonts/FjallaOne-Regular.ttf") format("opentype"); /* Open Type Font */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "noto";
+  src: url("/wp-content/themes/gf_portfolio/fonts/NotoSans-Regular.ttf") format("opentype"); /* Open Type Font */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "noto-bold";
+  src: url("/wp-content/themes/gf_portfolio/fonts/NotoSans-Bold.ttf") format("opentype"); /* Open Type Font */
+  font-style: normal;
+}
+
+
+$primary-font: "noto";
+$primary_font_bold: "noto-bold";
+$secondary-font: "fjalla";
+
+/* Breakpoints ---------------------------- */
+$contain: 1310px;
+$contain-small: 1100px;
+$contain-extra-small: 860px;
+$desktop: 1023px;
+$mobile: 750px;
+
+/* Colors ---------------------------- */
+$black: #0a0a0a;
+$white: #FFFFFF;
+
+$dark-blue: #293347;
+$blue: #2A8DAA;
+$light-blue: #ADC8E3;
+
+$dark-red: #c41e3d;
+
+$dark-gray: #3C4248;
+$light-gray: #DCE2E3;
+
+$error: #C74214;

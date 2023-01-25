@@ -1,0 +1,56 @@
+{
+  "name": "gfportfolio",
+  "version": "1.0.0",
+  "description": "site for GF Portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ROOT/PROJECT-REPO.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GraceFaubion",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cssnano": "^3.10.0",
+    "cssstats": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sizereport": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "mb-jubilee": "^1.4.1",
+    "modernizr": "^3.6.0",
+    "normalize.css": "^8.0.0",
+    "postcss-calc": "^6.0.1",
+    "postcss-compact-mq": "^0.2.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-each": "^0.10.0",
+    "postcss-extend": "^1.0.5",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^11.1.0",
+    "postcss-map": "^0.9.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-rgb": "^1.0.0",
+    "postcss-simple-vars": "^4.1.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.9"
+  }
+}
