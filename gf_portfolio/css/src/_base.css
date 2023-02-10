@@ -91,18 +91,21 @@ img {
   max-width: 100%;
   height: auto;
 
-  &.alignleft, &.alignleft:last-child {
+  &.alignleft,
+  &.alignleft:last-child {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px !important;
   }
 
-  &.aligncenter, &.aligncenter:last-child {
+  &.aligncenter,
+  &.aligncenter:last-child {
     display: block;
     margin: 0 auto 20px !important;
   }
 
-  &.alignright, &.alignright:last-child {
+  &.alignright,
+  &.alignright:last-child {
     float: right;
     margin-bottom: 20px !important;
     margin-left: 20px;

@@ -20,7 +20,6 @@
   font-style: normal;
 }
 
-
 $primary-font: "noto";
 $primary_font_bold: "noto-bold";
 $secondary-font: "fjalla";
@@ -34,15 +33,15 @@ $mobile: 750px;
 
 /* Colors ---------------------------- */
 $black: #0a0a0a;
-$white: #FFFFFF;
+$white: #ffffff;
 
 $dark-blue: #293347;
-$blue: #2A8DAA;
-$light-blue: #ADC8E3;
+$blue: #2a8daa;
+$light-blue: #adc8e3;
 
 $dark-red: #c41e3d;
 
-$dark-gray: #3C4248;
-$light-gray: #DCE2E3;
+$dark-gray: #3c4248;
+$light-gray: #dce2e3;
 
-$error: #C74214;
+$error: #c74214;

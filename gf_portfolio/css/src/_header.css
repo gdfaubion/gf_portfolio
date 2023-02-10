@@ -39,13 +39,13 @@
     background: linear-gradient(to top, $white 50%, $dark-blue 50%);
     background-size: 100% 200%;
     background-position: top;
-    transition: all .35s ease-out;
+    transition: all 0.35s ease-out;
     .icon {
       fill: $white;
       height: 20px;
       width: 20px;
       margin-left: 0;
-      transition: all .35s ease-out;
+      transition: all 0.35s ease-out;
     }
   }
   a:hover {

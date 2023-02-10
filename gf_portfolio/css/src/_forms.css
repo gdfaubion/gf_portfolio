@@ -4,20 +4,20 @@ label {
   font-weight: 600;
 }
 
-input[type=color],
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url],
-input[type=week],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 select,
 textarea {
   padding: 8px 20px;
@@ -25,7 +25,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  border: 2px solid #B5B5B5;
+  border: 2px solid #b5b5b5;
   border-radius: 4px;
   outline: transparent solid 1px !important;
   outline-offset: 1px;
@@ -82,16 +82,19 @@ textarea {
   }
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #999 !important;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #999 !important;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #999 !important;
 }
 
@@ -119,20 +122,20 @@ textarea {
     left: auto;
     visibility: visible;
 
-    input[type=color],
-    input[type=date],
-    input[type=datetime-local],
-    input[type=datetime],
-    input[type=email],
-    input[type=month],
-    input[type=number],
-    input[type=password],
-    input[type=search],
-    input[type=tel],
-    input[type=text],
-    input[type=time],
-    input[type=url],
-    input[type=week],
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
     select,
     textarea {
       border-color: #333;
@@ -150,7 +153,7 @@ textarea {
     font-weight: 700;
   }
 
-  .gfield_error [aria-invalid=true] {
+  .gfield_error [aria-invalid="true"] {
     border: 2px solid $error !important;
   }
 
@@ -198,23 +201,23 @@ textarea {
     padding: 7px 15px;
   }
 
-  input[type=color],
-  input[type=date],
-  input[type=datetime-local],
-  input[type=datetime],
-  input[type=email],
-  input[type=month],
-  input[type=number],
-  input[type=password],
-  input[type=search],
-  input[type=tel],
-  input[type=text],
-  input[type=time],
-  input[type=url],
-  input[type=week],
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
   select,
   textarea {
-    @extend input[type=text];
+    @extend input[type="text"];
   }
 
   .gfield_checkbox {
@@ -224,8 +227,9 @@ textarea {
     /* padding-left: 25px; */
   }
 
-  .gfield_checkbox, .gfield_radio, .ginput_container_consent {
-
+  .gfield_checkbox,
+  .gfield_radio,
+  .ginput_container_consent {
     .gchoice {
       position: relative;
     }
@@ -260,7 +264,7 @@ textarea {
       max-width: none;
       margin: 0;
       padding-left: 25px;
-      color: #09211A;
+      color: #09211a;
       font-size: 16px;
       line-height: 26px;
 
@@ -270,7 +274,7 @@ textarea {
         left: 0;
         box-sizing: border-box;
         width: 20px;
-        height: 20px; 
+        height: 20px;
         border: 2px solid $light-blue;
         content: "";
         background: transparent;
@@ -295,7 +299,8 @@ textarea {
     flex-wrap: wrap;
     gap: 20px 50px;
 
-    label::before, label::after {
+    label::before,
+    label::after {
       border-radius: 50%;
     }
   }
@@ -329,7 +334,7 @@ body .gform_wrapper .gform_validation_errors {
   border-radius: 0;
 }
 
-body .gform_wrapper .gform_validation_errors>h2 {
+body .gform_wrapper .gform_validation_errors > h2 {
   color: $error;
 }
 
@@ -346,6 +351,7 @@ body .gform_wrapper .gform_validation_errors {
   outline: none !important;
 }
 
-.gform_wrapper.gravity-theme #field_submit, .gform_wrapper.gravity-theme .gform_footer {
+.gform_wrapper.gravity-theme #field_submit,
+.gform_wrapper.gravity-theme .gform_footer {
   justify-content: start;
 }
